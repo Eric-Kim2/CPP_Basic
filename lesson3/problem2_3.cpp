@@ -3,17 +3,10 @@ using namespace std;
 
 int main()
 {
-
-
-
-
-
   int N, i;
   cin >> N;
-  for( i = N; i < 10; i++)
-    std::cout << i * N << '\n';
-
-
+  for( i = 1; i < 10; i++)
+    std::cout << N << " * " << i << " = " << i * N << '\n';
 
   return 0;
 }
