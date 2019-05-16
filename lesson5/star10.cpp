@@ -6,15 +6,27 @@ int main()
 
    int N, i, j, k, l, m;
 
+
    cin >> N;
-   for (i = 0; i < N; i++)
-   {
-     for (k = 1; k < 2; k++) {
-       std::cout << "**" << '\n';
+   for(i = 0; i < 4 * N - 2; i++){
+     if(i == N * 2 - 2){
+       for (int a = 0; a < 4 * N - 2; a++) {
+         cout << "*" ;
+       }
+       cout << endl;
+       for (int a = 0; a < 4 * N - 2; a++) {
+         cout << "*" ;
+       }
+       i++;
      }
-     for (j = 0; j < 2; j++) {
-       std::cout << "**" << '\n';
+     else{
+       for (j = 0; j < N * 2 - 2; j++) {
+          std::cout << " " ;
+       }
+       cout << "**" ;
      }
+
+     cout << endl;
    }
     return 0;
  }
