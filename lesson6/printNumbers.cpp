@@ -4,12 +4,11 @@ using namespace std;
 int main()
 {
   int arr[100][1000];
-
-
-  for(int i=1; i < 100001; i++){
-    std::cout << i << " " ;
-
+  for(int j=0; j<100; j++){
+    for(int i=0; i<1000; i++){
+      arr[j][i] = j*1000+i+1;
+    }
   }
 
-
+  return 0;
 }
